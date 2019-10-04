@@ -1,2 +1,19 @@
- this a new file 
-food is here
+sudo yum remove java-1.7.0-openjdk
+sudo yum install java-1.8.0
+
+ yum update –y
+
+wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+
+rpm — import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+
+ yum install jenkins -y
+
+ service jenkins start
+
+chkconfig jenkins on
+
+systemctl start jenkins.service
+
+cat /var/lib/jenkins/secrets/initialAdminPassword
+
