@@ -7,3 +7,5 @@ make configure
 sudo make install
 git --version
 
+
+https://phoenixnap.com/kb/create-local-yum-repository-centos
